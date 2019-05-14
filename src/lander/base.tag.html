@@ -1,0 +1,9 @@
+<div class='nav'>
+   <a [routerLink]='home.link'>
+      <img [src]='home.logo' alt [alt]='home.text' [title]='home.text'/>
+   </a>
+   <a [routerLink]='n.link' *ngFor='let n of navs'> {{ n.text }} </a>
+</div>
+<section *ngFor='let t of topics'>
+  {{ t.title }}
+</section>
