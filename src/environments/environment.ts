@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   host: {
-    static: ''
+    app: 'http://localhost:7654'
   }
 };
 

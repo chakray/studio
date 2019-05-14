@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-base',
-  template: 'Pricing'
+  selector: 'app-pricing-base',
+  template: 'Pricing',
+  styleUrls: ['./base.tag.sass']
 })
 export class BaseTag {}

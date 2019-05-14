@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AppNavTag } from './nav/nav.tag';
 import { AppBaseTag as BaseTag } from './base.tag';
 
 const routes: Routes = [{
@@ -22,8 +24,11 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  declarations: [BaseTag],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)],
+  declarations: [BaseTag,
+    AppNavTag],
   exports: [RouterModule]
 })
 export class AppRouting {}

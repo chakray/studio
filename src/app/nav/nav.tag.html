@@ -1,0 +1,5 @@
+<a class='home' *ngIf='home' [routerLink]='home.link || ""'>
+  <img *ngIf='home.logo' [src]='home.logo' [title]='home.text' alt [alt]='home.text'/>
+</a>
+
+<a class='link' *ngFor='let i of links' [routerLink]='i.link'> {{ i.text }} </a>

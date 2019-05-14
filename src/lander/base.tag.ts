@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
-
-const navs = [{
-}];
-
-const topics = [{
-}];
+import { Data } from 'src/data';
 
 @Component({
-  selector: 'app-base',
+  selector: 'app-lander-base',
   templateUrl: './base.tag.html',
   styleUrls: ['./base.tag.sass'],
 })
 export class BaseTag {
   home = { text: 'home', link: '' };
-  navs = navs;
-  topics = topics;
-  constructor() { }
+  nav: any;
+  topics: any;
+  constructor(private d: Data) {
+    d.topics().subscribe(ts => {
+      this.topics = ts;
+    });
+  }
 }

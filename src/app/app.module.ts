@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DataMod } from 'src/data';
 
 import { AppRouting } from './app.routing';
 import { AppTag } from './app.tag';
@@ -9,6 +10,7 @@ import { AppTag } from './app.tag';
     AppTag
   ],
   imports: [
+    DataMod,
     AppRouting,
     BrowserModule
   ],
