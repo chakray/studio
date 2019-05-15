@@ -1,3 +1,4 @@
-<section *ngFor='let t of topics'>
-  {{ t.name }}
-</section>
+<app-lander-section *ngFor='let t of topics'
+  [tag]='t.tag' [ctx]='t.ctx' [class]='t.type'
+  [style.background-image]='t.bgUrl'>
+</app-lander-section>
