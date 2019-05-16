@@ -5,7 +5,7 @@ import { Data } from 'src/data';
 
 @Component({
   selector: 'app-base',
-  template: '<app-nav [data]="nav"></app-nav><router-outlet></router-outlet>',
+  template: '<app-nav *ngIf="nav" [data]="nav"></app-nav><router-outlet></router-outlet>',
   styleUrls: ['./base.tag.sass']
 })
 export class AppBaseTag {

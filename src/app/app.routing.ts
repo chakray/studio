@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { CtIconMod } from '@chakray/tags';
 
 import { AppNavTag } from './nav/nav.tag';
 import { AppBaseTag as BaseTag } from './base.tag';
@@ -25,6 +26,7 @@ const routes: Routes = [{
 
 @NgModule({
   imports: [
+    CtIconMod,
     CommonModule,
     RouterModule.forRoot(routes)],
   declarations: [BaseTag,

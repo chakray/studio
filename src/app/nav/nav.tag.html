@@ -1,5 +1,12 @@
 <a class='home' *ngIf='home' [routerLink]='home.link || ""'>
-  <img *ngIf='home.logo' [src]='home.logo' [title]='home.text' alt [alt]='home.text'/>
+  <cti *ngIf='home.icon' [key]='home.icon'></cti>
+  {{ home.text }}
 </a>
+<div class='gap'></div>
 
-<a class='link' *ngFor='let i of links' [routerLink]='i.link'> {{ i.text }} </a>
+<a class='link' *ngFor='let i of links'
+  routerLinkActive='x'
+  [routerLink]='i.link'>
+  <cti *ngIf='i.icon' [key]='i.icon'></cti>
+  {{ i.text }}
+</a>

@@ -1,13 +1,26 @@
 \:host
-  position: absolute
-  top: 0
-  left: 0
   display: flex
   width: 100%
   font-size: 16px
+  a
+    display: flex
+    align-items: center
+    color: white
+    font-size: 18px
+    text-decoration: none
+    text-shadow: 0 0 5px rgba(0,0,0,0.5)
+    transition: text-shadow .3s ease-in-out
+    &:hover
+      text-shadow: 0 0 8px rgba(0,0,0,0.8)
+    cti
+      margin-right: 5px
   .home
-    flex: 1
-    padding: 20px
-  .link
     flex: 0 0 auto
     padding: 20px
+  .gap
+    flex: 1
+  .link
+    flex: 0 0 auto
+    padding: 10px
+    &.x
+      color: #aaccee
