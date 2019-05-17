@@ -1,0 +1,46 @@
+\:host
+  box-sizing: border-box
+  display: inline-block
+  padding: 100px
+  width: 100%
+  .wrap
+    display: flex
+    flex-flow: column
+    width: 100%
+    // border-radius: 5px
+    // box-shadow: 0 0 5px rgba(1,1,1,.4)
+  .item
+    display: flex
+    padding: 80px 30px
+    min-height: 400px
+    &:nth-child(2n + 1)
+      background: radial-gradient(ellipse, rgba(0,0,0,.1) 0%, rgba(255,255,255,0) 70%)
+    &:nth-child(2n)
+      direction: rtl
+      p
+        padding-left: 50px
+        padding-right: 10px
+        direction: ltr
+  h2
+    padding: 10px 0
+    letter-spacing: 2px
+  p
+    padding-left: 10px
+    padding-right: 50px
+    line-height: 1.5em
+    text-align: justify
+  .sublist
+    flex: 0 0 auto
+    display: flex
+    .sub
+      align-self: center
+      display: flex
+      flex-flow: column
+      padding: 20px
+      min-width: 100px
+      text-align: center
+    .sub cti
+      font-size: 100px
+    .sub label
+      color: var(--c-bl-bb)
+      font-weight: bold

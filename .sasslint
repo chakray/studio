@@ -53,6 +53,7 @@ rules:
         - right
         - bottom
         - flex
+        - align-self
 
         - box-sizing
         - display
@@ -107,6 +108,7 @@ rules:
         - font-style
         - font-weight
         - font-variant
+        - direction
         - white-space
         - word-break
         - line-height

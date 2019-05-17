@@ -25,4 +25,4 @@ export const cloudy: IconSet = {
   windycloud: '\e910',
   windy: '\e911',
   rain: '\e912',
-}
+};

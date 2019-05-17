@@ -1,0 +1,14 @@
+<div class='wrap'>
+  <div class='item' *ngFor='let i of list'>
+    <div class='part'>
+      <h2> {{ i.text }} </h2>
+      <p> {{ i.desc }} </p>
+    </div>
+    <div class='sublist'>
+      <div class='sub' *ngFor='let j of i.sublist'>
+        <cti *ngIf='j.icon' [key]='j.icon.key' [style.color]='j.icon.color'></cti>
+        <label> {{ j.text }} </label>
+      </div>
+    </div>
+  </div>
+</div>
