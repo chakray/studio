@@ -8,6 +8,8 @@ const lorem = new Lorem();
   styleUrls: ['./hsplit.tag.sass'],
 })
 export class HsplitTag {
+  name = '';
+  list = [];
   set ctx(v) {
     Object.assign(this, v);
     v.list.forEach(i => {

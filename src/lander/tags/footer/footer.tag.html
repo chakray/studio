@@ -1,0 +1,19 @@
+<h2>
+  <cti [key]='icon.key'></cti>
+  {{ name }}
+</h2>
+
+<div class='wrap'>
+  <div class='contact'>
+    <label> {{ contact.text }} </label>
+    <div> {{ contact.location }} </div>
+    <div> {{ contact.phone }} </div>
+    <div> {{ contact.email }} </div>
+  </div>
+  <div class='linkset' *ngFor='let s of linkset'>
+    <label> {{ s.text }} </label>
+    <a [routerLink]='sl.link' *ngFor='let sl of s.links'> {{ sl.text }} </a>
+  </div>
+</div>
+
+<p> {{ name }} &copy; 2019, All rights reserved </p>
