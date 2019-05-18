@@ -1,0 +1,8 @@
+<h1> {{ name }} </h1>
+<div class='wrap'>
+  <div class='item' *ngFor='let i of list'>
+      <cti *ngIf='i.icon' [key]='i.icon.key' [style.color]='i.icon.color'></cti>
+      <h2> {{ i.text }} </h2>
+      <p> {{ i.desc }} </p>
+  </div>
+</div>

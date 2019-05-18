@@ -3,13 +3,11 @@ import { LoremIpsum as Lorem } from 'lorem-ipsum';
 
 const lorem = new Lorem();
 @Component({
-  selector: 'app-list-aside',
-  templateUrl: './list-aside.tag.html',
-  styleUrls: ['./list-aside.tag.sass'],
+  selector: 'app-hsplit',
+  templateUrl: './hsplit.tag.html',
+  styleUrls: ['./hsplit.tag.sass'],
 })
-export class ListAsideTag {
-  name = '';
-  list = [];
+export class HsplitTag {
   set ctx(v) {
     Object.assign(this, v);
     v.list.forEach(i => {
